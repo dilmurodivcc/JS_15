@@ -94,9 +94,12 @@
         </div>
         <div id="content">
           <h2><span>Animal</span> nomli class yarating</h2>
-          <div class="output" style="text-align: start; align-items: start; padding: 20px;" >
-            <p>Kitty makes a sound: <span>Meow</span></p> 
-            <p>Buddy makes a sound: <span>Woof</span></p> 
+          <div
+            class="output"
+            style="text-align: start; align-items: start; padding: 20px"
+          >
+            <p>Kitty makes a sound: <span>Meow</span></p>
+            <p>Buddy makes a sound: <span>Woof</span></p>
           </div>
           <button class="button button-85" onclick="loger1()">
             Consoleda Chiqarish
@@ -106,42 +109,43 @@
       <section id="second">
         <div class="codee">
           <pre><code class="language-javascript">
-   class Animal {
-     constructor(name, type, sound) {
-       this.name = name;
-       this.type = type;
-       this.sound = sound;
-     }
-     makeSound() {
-       console.log(`${this.name} makes a sound: ${this.sound}`);
-     }
-   }
-   class Cat extends Animal {
-     constructor(name) {
-       super(name, "Cat", "Meow");
-     }
-   }
-   class Dog extends Animal {
-     constructor(name) {
-       super(name, "Dog", "Woof");
-     }
-   }
-   const cat = new Cat("Kitty");
-   const dog = new Dog("Buddy");
-   function loger1() {
-     cat.makeSound();
-     dog.makeSound();
-   }  
+class Student {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;  
+    this.balls = []; 
+  }
+
+  add(ball) {
+    this.balls.push(ball);
+  }
+
+  sum() {
+    const sum = this.balls.reduce((acc, ball) => acc + ball, 0);
+    const average = sum / this.balls.length;
+    console.log(`O'rtacha baho: ${average.toFixed(2)}`);
+  }
+}
+
+const student = new Student("Ali", 20);
+
+student.add(90);
+student.add(80);
+student.add(85);
+student.sum();
+ 
      </code></pre>
           <button class="copy" onclick="copyCode()"><p>Copy</p></button>
         </div>
         <div id="content">
-          <h2><span>Animal</span> nomli class yarating</h2>
-          <div class="output" style="text-align: start; align-items: start; padding: 20px;" >
-            <p>Kitty makes a sound: <span>Meow</span></p> 
-            <p>Buddy makes a sound: <span>Woof</span></p> 
+          <h2><span>Talaba</span> ma'lumotlarini boshqarish</h2>
+          <div
+            class="output"
+            style="text-align: start; align-items: start; padding: 20px"
+          >
+            <p>O'rtacha baho: <span>85.00</span></p>
           </div>
-          <button class="button button-85" onclick="loger1()">
+          <button class="button button-85" onclick="loger2()">
             Consoleda Chiqarish
           </button>
         </div>
@@ -149,42 +153,43 @@
       <section id="third">
         <div class="codee">
           <pre><code class="language-javascript">
-   class Animal {
-     constructor(name, type, sound) {
-       this.name = name;
-       this.type = type;
-       this.sound = sound;
-     }
-     makeSound() {
-       console.log(`${this.name} makes a sound: ${this.sound}`);
-     }
-   }
-   class Cat extends Animal {
-     constructor(name) {
-       super(name, "Cat", "Meow");
-     }
-   }
-   class Dog extends Animal {
-     constructor(name) {
-       super(name, "Dog", "Woof");
-     }
-   }
-   const cat = new Cat("Kitty");
-   const dog = new Dog("Buddy");
-   function loger1() {
-     cat.makeSound();
-     dog.makeSound();
-   }  
+ class Car {
+  constructor(color,brand, model, year, probeg = 0) {
+    this.color = color;
+    this.brand = brand;
+    this.model = model;
+    this.year = year;
+    this.probeg = probeg;
+  }
+
+  drive(km) {
+    this.probeg += km;
+    console.log(`${this.color} rangli ${this.brand} ${this.model} 
+    ${km} km yurdi. Yangi Probeg: ${this.probeg} km.`);
+  }
+}
+
+const car = new Car("Qora", "Mercedes", "CLS 63s AMG", 2018, 50000);
+
+function loger3() {
+  car.drive(1000);
+}
+
      </code></pre>
           <button class="copy" onclick="copyCode()"><p>Copy</p></button>
         </div>
         <div id="content">
-          <h2><span>Animal</span> nomli class yarating</h2>
-          <div class="output" style="text-align: start; align-items: start; padding: 20px;" >
-            <p>Kitty makes a sound: <span>Meow</span></p> 
-            <p>Buddy makes a sound: <span>Woof</span></p> 
+          <h2><span>Avtomobil</span> boshqaruv tizimi</h2>
+          <div
+            class="output"
+            style="text-align: start; align-items: start; padding: 20px"
+          >
+            <p>
+              Qora rangli Mercedes CLS 63s AMG 1000 km yurdi. Yangi Probeg:
+              <span>51000km.</span>
+            </p>
           </div>
-          <button class="button button-85" onclick="loger1()">
+          <button class="button button-85" onclick="loger3()">
             Consoleda Chiqarish
           </button>
         </div>

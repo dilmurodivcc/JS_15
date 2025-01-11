@@ -25,39 +25,52 @@ function loger1() {
   dog.makeSound();
 }
 
-function m2() {
-  const input = document.getElementById("inputValue2").value;
-  const lowerCase = input.toLowerCase();
-  if (lowerCase === lowerCase.split("").reverse().join("")) {
-    document.getElementById("output2").innerHTML = "Palindrom";
-  } else {
-    document.getElementById("output2").innerHTML = "Palindrom emas";
+class Student {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+    this.grades = [];
+  }
+
+  add(grade) {
+    this.grades.push(grade);
+  }
+
+  sum() {
+    const sum = this.grades.reduce((acc, grade) => acc + grade, 0);
+    const middle = sum / this.grades.length;
+    console.log(`O'rtacha baho: ${middle.toFixed(2)}`);
   }
 }
-function m3() {
-  const str1 = document.getElementById("inputValue3").value;
-  const str2 = document.getElementById("inputValue3_2").value;
+const student = new Student("Ali", 20); 
+student.add(90);
+student.add(80);
+student.add(85);
+function loger2() {
+  student.sum();
+}
 
-  const formatString = (str) => {
-    return str.toLowerCase().split("").sort().join("");
-  };
 
-  if (formatString(str1) === formatString(str2)) {
-    document.getElementById("output3").innerHTML = "Anagram";
-  } else {
-    document.getElementById("output3").innerHTML = "Anagram emas";
+
+class Car {
+  constructor(color,brand, model, year, probeg = 0) {
+    this.color = color;
+    this.brand = brand;
+    this.model = model;
+    this.year = year;
+    this.probeg = probeg;
+  }
+
+  drive(km) {
+    this.probeg += km;
+    console.log(`${this.color} rangli ${this.brand} ${this.model} ${km} km yurdi. Yangi Probeg: ${this.probeg} km.`);
   }
 }
 
-function m4() {
-  const num = +document.getElementById("inputValue4").value;
-  function fibonacci(n) {
-    if (n <= 0) return 0;
-    if (n === 1) return 1;
-    return fibonacci(n - 1) + fibonacci(n - 2);
-  }
+const car = new Car("Qora", "Mercedes", "CLS 63s AMG", 2018, 50000);
 
-  document.getElementById("output4").innerHTML = fibonacci(num);
+function loger3() {
+  car.drive(1000);
 }
 
 // SOME FUNCTION -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
