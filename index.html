@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Algorithms</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="shortcut icon"
+      href="./icons/javascript-logo-0.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img style="width: 40px" src="./icons/javascript-logo-0.png" alt="" />
+        <p>algorithms.</p>
+      </div>
+      <div class="navbar">
+        <nav>
+          <a href="#first">First</a>
+          <a href="#second">Second</a>
+          <a href="#third">Third</a>
+          <a href="#fourth">Fourth</a>
+        </nav>
+        <div class="btns button-85">
+          <a
+            target="_blank"
+            href="https://github.com/dilmurodivcc/JS-12.git
+          "
+            ><i class="fa-brands fa-github"></i
+          ></a>
+
+          <i style="cursor: pointer" class="fa-solid fa-moon moon-icon"></i>
+        </div>
+      </div>
+    </header>
+    <h1>OOP by Abdulloh Sodiqov</h1>
+    <div class="container">
+      <section id="first">
+        <div class="codee">
+          <pre><code class="language-javascript">
+   class Animal {
+     constructor(name, type, sound) {
+       this.name = name;
+       this.type = type;
+       this.sound = sound;
+     }
+     makeSound() {
+       console.log(`${this.name} makes a sound: ${this.sound}`);
+     }
+   }
+   class Cat extends Animal {
+     constructor(name) {
+       super(name, "Cat", "Meow");
+     }
+   }
+   class Dog extends Animal {
+     constructor(name) {
+       super(name, "Dog", "Woof");
+     }
+   }
+   const cat = new Cat("Kitty");
+   const dog = new Dog("Buddy");
+   function loger1() {
+     cat.makeSound();
+     dog.makeSound();
+   }  
+     </code></pre>
+          <button class="copy" onclick="copyCode()"><p>Copy</p></button>
+        </div>
+        <div id="content">
+          <h2><span>Animal</span> nomli class yarating</h2>
+          <div class="output" style="text-align: start; align-items: start; padding: 20px;" >
+            <p>Kitty makes a sound: <span>Meow</span></p> 
+            <p>Buddy makes a sound: <span>Woof</span></p> 
+          </div>
+          <button class="button button-85" onclick="loger1()">
+            Consoleda Chiqarish
+          </button>
+        </div>
+      </section>
+      <section id="second">
+        <div class="codee">
+          <pre><code class="language-javascript">
+   class Animal {
+     constructor(name, type, sound) {
+       this.name = name;
+       this.type = type;
+       this.sound = sound;
+     }
+     makeSound() {
+       console.log(`${this.name} makes a sound: ${this.sound}`);
+     }
+   }
+   class Cat extends Animal {
+     constructor(name) {
+       super(name, "Cat", "Meow");
+     }
+   }
+   class Dog extends Animal {
+     constructor(name) {
+       super(name, "Dog", "Woof");
+     }
+   }
+   const cat = new Cat("Kitty");
+   const dog = new Dog("Buddy");
+   function loger1() {
+     cat.makeSound();
+     dog.makeSound();
+   }  
+     </code></pre>
+          <button class="copy" onclick="copyCode()"><p>Copy</p></button>
+        </div>
+        <div id="content">
+          <h2><span>Animal</span> nomli class yarating</h2>
+          <div class="output" style="text-align: start; align-items: start; padding: 20px;" >
+            <p>Kitty makes a sound: <span>Meow</span></p> 
+            <p>Buddy makes a sound: <span>Woof</span></p> 
+          </div>
+          <button class="button button-85" onclick="loger1()">
+            Consoleda Chiqarish
+          </button>
+        </div>
+      </section>
+      <section id="third">
+        <div class="codee">
+          <pre><code class="language-javascript">
+   class Animal {
+     constructor(name, type, sound) {
+       this.name = name;
+       this.type = type;
+       this.sound = sound;
+     }
+     makeSound() {
+       console.log(`${this.name} makes a sound: ${this.sound}`);
+     }
+   }
+   class Cat extends Animal {
+     constructor(name) {
+       super(name, "Cat", "Meow");
+     }
+   }
+   class Dog extends Animal {
+     constructor(name) {
+       super(name, "Dog", "Woof");
+     }
+   }
+   const cat = new Cat("Kitty");
+   const dog = new Dog("Buddy");
+   function loger1() {
+     cat.makeSound();
+     dog.makeSound();
+   }  
+     </code></pre>
+          <button class="copy" onclick="copyCode()"><p>Copy</p></button>
+        </div>
+        <div id="content">
+          <h2><span>Animal</span> nomli class yarating</h2>
+          <div class="output" style="text-align: start; align-items: start; padding: 20px;" >
+            <p>Kitty makes a sound: <span>Meow</span></p> 
+            <p>Buddy makes a sound: <span>Woof</span></p> 
+          </div>
+          <button class="button button-85" onclick="loger1()">
+            Consoleda Chiqarish
+          </button>
+        </div>
+      </section>
+
+      <div class="swiper mySwiper">
+        <h1>Let's review a little Array Methods.</h1>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <b>push<span style="color: rgb(37, 143, 185)">()</span></b>
+            <p><span>Ma'nosi:</span> Arrayga oxiridan element qo'shadi.</p>
+            <img src="./images/Screenshot_9.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <b>pop<span style="color: rgb(37, 143, 185)">()</span></b>
+            <p>
+              <span>Ma'nosi:</span> Arrayning oxiridan elementni olib tashlaydi
+              va o'sha elementni qaytaradi.
+            </p>
+            <img src="./images/Screenshot_10.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <b>shift<span style="color: rgb(37, 143, 185)">()</span></b>
+            <p>
+              <span>Ma'nosi:</span> Arrayning boshidan elementni olib tashlaydi
+              va o'sha elementni qaytaradi.
+            </p>
+            <img src="./images/Screenshot_11.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <b>unshift<span style="color: rgb(37, 143, 185)">()</span></b>
+            <p><span>Ma'nosi:</span> Arrayning boshiga element qo'shadi.</p>
+            <img src="./images/Screenshot_12.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <b>concat<span style="color: rgb(37, 143, 185)">()</span></b>
+            <p>
+              <span>Ma'nosi:</span> Ikki yoki undan ortiq arrayni birlashtiradi.
+            </p>
+            <img src="./images/Screenshot_13.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <b>slice<span style="color: rgb(37, 143, 185)">()</span></b>
+            <p>
+              <span>Ma'nosi:</span> Arrayning bir qismini kesib oladi. Asl
+              arrayni o'zgartirmaydi.
+            </p>
+            <img src="./images/Screenshot_14.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <b>splice<span style="color: rgb(37, 143, 185)">()</span></b>
+            <p>
+              <span>Ma'nosi:</span> Arraydan elementlarni olib tashlash yoki
+              yangi elementlar qo'shish.
+            </p>
+            <img src="./images/Screenshot_15.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <b>indexOf<span style="color: rgb(37, 143, 185)">()</span></b>
+            <p>
+              <span>Ma'nosi:</span> Arrayda ma'lum bir elementning indeksini
+              qaytaradi.
+            </p>
+            <img src="./images/Screenshot_16.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <b>includes<span style="color: rgb(37, 143, 185)">()</span></b>
+            <p>
+              <span>Ma'nosi:</span> Arrayda ma'lum bir element bor-yo'qligini
+              tekshiradi.
+            </p>
+            <img src="./images/Screenshot_17.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <b>reverse<span style="color: rgb(37, 143, 185)">()</span></b>
+            <p><span>Ma'nosi:</span>Arrayni teskari tartibda qaytaradi.</p>
+            <img src="./images/Screenshot_18.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <b>join<span style="color: rgb(37, 143, 185)">()</span></b>
+            <p>
+              <span>Ma'nosi:</span> Array elementlarini string sifatida
+              birlashtiradi, istalgan ajratuvchi bilan.
+            </p>
+            <img src="./images/Screenshot_19.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <b>map<span style="color: rgb(37, 143, 185)">()</span></b>
+            <p>
+              <span>Ma'nosi:</span> Arrayning har bir elementi ustida funksiya
+              bajaradi va yangi array qaytaradi.
+            </p>
+            <img src="./images/Screenshot_20.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <b>filter<span style="color: rgb(37, 143, 185)">()</span></b>
+            <p>
+              <span>Ma'nosi:</span> Arraydan shartga mos keluvchi elementlarni
+              qaytaradi.
+            </p>
+            <img src="./images/Screenshot_21.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <b>reduce<span style="color: rgb(37, 143, 185)">()</span></b>
+            <p>
+              <span>Ma'nosi:</span> Array elementlarini yagona qiymatga
+              qisqartiradi.
+            </p>
+            <img src="./images/Screenshot_22.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <b>forEach<span style="color: rgb(37, 143, 185)">()</span></b>
+            <p>
+              <span>Ma'nosi:</span>Arrayning har bir elementi uchun funksiya
+              bajaradi. Hech qanday qiymat qaytarmaydi.
+            </p>
+            <img src="./images/Screenshot_23.png" alt="" />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <footer>
+      <div class="logo">
+        <img style="width: 40px" src="./icons/javascript-logo-0.png" alt="" />
+        <p>algorithms.</p>
+      </div>
+      <div style="margin-left: 10%" class="navbar">
+        <nav>
+          <a href="#first">First</a>
+          <a href="#second">Second</a>
+          <a href="#third">Third</a>
+        </nav>
+      </div>
+      <p>&copy; 2024 JavaScript Algorithms by Mr.Abdulloh.</p>
+    </footer>
+    <button id="backToTopBtn">
+      <i><i class="fa-solid fa-arrow-up"></i></i>
+    </button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./focus.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
