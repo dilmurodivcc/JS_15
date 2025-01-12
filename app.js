@@ -53,17 +53,22 @@ function loger2() {
 
 
 class Car {
-  constructor(color,brand, model, year, probeg = 0) {
+  constructor(color,brand, model, year, mileage = 0) {
     this.color = color;
     this.brand = brand;
     this.model = model;
     this.year = year;
-    this.probeg = probeg;
+    this.mileage = mileage;
   }
 
+
   drive(km) {
-    this.probeg += km;
-    console.log(`${this.color} rangli ${this.brand} ${this.model} ${km} km yurdi. Yangi Probeg: ${this.probeg} km.`);
+    this.mileage += km;
+    console.log(`${this.color} rangli ${this.brand} ${this.model} ${km} km yurdi. Yangi mileage: ${this.mileage} km.`);
+  }
+  getCarAge(){
+    this.age = new Date().getFullYear() - this.year;
+    console.log(`${this.color} rangli ${this.brand} ${this.model} ${this.age} yosh`);
   }
 }
 
@@ -71,7 +76,10 @@ const car = new Car("Qora", "Mercedes", "CLS 63s AMG", 2018, 50000);
 
 function loger3() {
   car.drive(1000);
+  car.getCarAge();
 }
+
+
 
 // SOME FUNCTION -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
